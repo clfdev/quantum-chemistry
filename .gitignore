@@ -1,0 +1,20 @@
+# Create .gitignore file with PowerShell
+@"
+# CodeBlocks generated files
+bin/
+obj/
+*.cbp
+*.depend
+*.layout
+
+# Compiled files
+*.exe
+*.o
+*.obj
+
+# Debug files
+*.pdb
+"@ | Out-File -FilePath ".gitignore" -Encoding utf8
+
+# Verify .gitignore was created
+Get-Content .gitignore
