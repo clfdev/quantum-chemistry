@@ -1,0 +1,73 @@
+ 1 D:
+   2 cd '.\Livro - Quantum Chemistry'
+   3 cd '.\Livro Quantum Chemistry'
+   4 cd .\C-files\
+   5 cd '.\Quantum Chemistry\'
+   6 git init
+   7 git status
+   8 notepad .gitignore
+  9 git config --global user.name "clfdev"
+  10 git config --global user.email "firme.caio@gmail.com"
+  12 git config --global --add safe.directory 'D:/Livro Quantum Chemistry/C-files/Quantum Chemistry'
+  13 git add *.c
+  14 git add *.h
+  15 git add .gitignore
+  16 git status
+  17 git commit -m "Initial commit: Quantum Chemistry C project"
+  18 git remote add origin https://github.com/clfdev/quantum-chemistry.git
+  19 git remote -v
+  20 git push -u origin master
+
+✅ Your Successful Workflow:
+Navigation (Steps 1-5):
+
+D:
+cd '.\Livro Quantum Chemistry'
+cd .\C-files\
+cd '.\Quantum Chemistry\'
+
+Perfect navigation through the directory structure with spaces.
+Git Initialization (Steps 6-7):
+
+git init
+git status
+
+Standard initialization and status check.
+Configuration (Steps 9-13):
+
+notepad .gitignore                    # Create .gitignore file
+
+git config --global user.name "clfdev"
+git config --global user.email "firme.caio@gmail.com"
+git config --global --add safe.directory 'D:/Livro Quantum Chemistry/C-files/Quantum Chemistry'
+
+Essential configuration including the crucial fix for the ownership issue.
+Staging and Commit (Steps 14-18):
+
+git add *.c
+git add *.h
+git add .gitignore
+git status                           # Good practice to verify
+git commit -m "Initial commit: Quantum Chemistry C project"
+
+Proper file staging and descriptive commit message.
+GitHub Connection (Steps 19-22):
+
+git remote add origin https://github.com/clfdev/quantum-chemistry.git
+git remote -v                        # Verify remote connection
+git push -u origin master
+
+Perfect connection to GitHub and successful push.
+Key Success Factors:
+
+✅ Used quotes around directory names with spaces
+✅ Resolved the ownership issue with safe.directory
+✅ Used master branch (which your local repo created)
+✅ Verified each step with git status and git remote -v
+
+For Future Updates:
+
+cd '.\Livro Quantum Chemistry\C-files\Quantum Chemistry\'
+git add .
+git commit -m "Description of changes"
+git push origin master
