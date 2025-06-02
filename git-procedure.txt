@@ -71,3 +71,10 @@ cd '.\Livro Quantum Chemistry\C-files\Quantum Chemistry\'
 git add .
 git commit -m "Description of changes"
 git push origin master
+
+
+Atualizações
+
+git add .
+git commit -m "novos exemplos"
+git push origin master
